@@ -20,15 +20,12 @@ body{background-color: gray}
 }
 fieldset
 {
+  border-width:1px;
   width:700px;
   background-color: gray;
 }
 
-legend
-{
-  font-style:bold;
-  font-family: "Times New Roman";
-}
+
 #formulario label
 {
   position:absolute;
