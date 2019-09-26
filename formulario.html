@@ -1,58 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Formulário Ces</title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+ <style>
+02.container {
+03         width: 100vw;
+04         height: 100vh;
+05         background: #6C7A89;
+06         display: flex;
+07         flex-direction: row;
+08         justify-content: center;
+09         align-items: center
+10     }
+11.box {
+12         width: 300px;
+13         height: 300px;
+14         background: #fff;
+}
+</style>
 </head>
-<body>
-	<form id="formulario">
-		<form method="post" action="mailto:jhon4than_jf@hotmail.com">
-		<fieldset id="formulario">
-			<legend><h1>Informações Pessoais</h1></legend>
-			<p><label for="iNome">Nome:</label>
-			<input type="text" name="tNome" id="iNome" size="20" maxlength="30" placeholder="Nome"></p>
-			<p><label for="iNome">Sobrenome:</label>
-			<input type="text" name="tsobrenome" id="isobrenome" size="20" maxlength="30" placeholder="Sobrenome"></p>
-			<p><label for="iEmail">Digite seu Email:</label>
-			<input type="e-mail" name="tEmail" size="30" maxlength="30" placeholder="e-mail"></p>
-			<p><label for="iTel">Telefone:</label>
-			<input type="Telefone" name="tTel" size="30" maxlength="30" placeholder="DDD+Telefone"></p>
-		</form>
-		</fieldset>
 
+<body>
+		
+	<div id="area">
 		<form id="formulario">
 			<fieldset>
-				<legend>Endereço</legend>
-			<p><label for="iRua">Lagradouro:</label>
-			<input type="text" name="tRua" id="iRua" size="20" maxlength="30" placeholder="Lagradouro"></p>
-			<p><label for="iNum">Número:</label>
-			<input type="text" name="tNum" id="iNum" size="20" maxlength="30" placeholder="nº"></p>
-			<p><label for="iBairro">Bairro:</label>
-			<input type="text" name="tBairro" id="iBairro" size="20" maxlength="30" placeholder="Bairro"></p>
-			<p><label for="iEst">Estado:</label>
-			<input type="text" name="tEst" id="iEst" size="20" maxlength="30" placeholder="Estado"></p>
-			<p><label for="iCida">Cidade:</label>
-			<input type="text" name="tCida" id="iCida" size="20" maxlength="30" placeholder="Cidade"></p>
-			<p><label for="iNum">CEP:</label>
-			<input type="text" name="tNum" id="iNum" size="20" maxlength="30" placeholder="Cep"></p>
+				<legend><h1>Informações Pessoais</h1></legend>
+					
+				<p><label for="iNome">Nome:</label>
+					<input class="campo_nome" type="text"></p><br>
+				<p><label for="iNome">Sobrenome:</label>
+					<input class="campo_sobrenome" type="text"></p><br>
+				<p><label for="iEmail">Digite seu Email:</label>
+					<input class="campo_email" type="text"></p><br>
+				<p><label for="iTel">Telefone:</label>
+					<input class="campo_telefone" type="text"></p><br>
+				   	
 			</fieldset>
 		</form>
-<form id="formulario">
-	<fieldset>
-		<legend>Qual SO (Sistema Operacional) utiliza?:</legend>
-		<input type="checkbox" name="visita" value="Linux" checked>Linux
-		<input type="checkbox" name="visita" value="windows">Windows
-		<input type="checkbox" name="visita" value="mac os">MAC OS
-		</fieldset>
-</form>
-	<button type="submit">Enviar Formulário</button>
-	<br>
-	<br>
-	<a href="https://ces-jf.webflow.io/" target="blank">Centro de Ensino Superior de Juiz de Fora</a>
+	</div>
 
 
+	<div id="area">
+		<form id="formulario">
+			<fieldset>
+				<legend><h1>Endereço</h1></legend>
+			
+				<p><label for="iRua">Logradouro:</label>
+					<input class="campo_logradouro" type="text"></p><br>
+				<p><label for="iNum">Número:</label>
+					<input class="campo_numero" type="text"></p><br>
+				<p><label for="iBairro">Bairro:</label>
+					<input class="campo_bairro" type="text"></p><br>
+				<p><label for="iEst">Estado:</label>
+					<input class="campo_estado" type="text"></p><br>
+				<p><label for="iCida">Cidade:</label>
+					<input class="campo_cidade" type="text"></p><br>
+				<p><label for="iCEP">CEP:</label>
+					<input class="campo_cep" type="text"></p><br>
+
+			</fieldset>
+		</form>
+	</div>
+
+</br>
+</br>
+</br>
+</br>
+	<div id="area">	
+		<form id="formulario">
+			<fieldset>
+			
+				<legend><h1>Qual SO (Sistema Operacional) utiliza?</h1></legend>
+
+				<input type="checkbox" name="visita" value="Linux" checked>Linux
+				<input type="checkbox" name="visita" value="windows">Windows
+				<input type="checkbox" name="visita" value="mac os">MAC OS
+
+			</fieldset>
+		</form>
+	</div>
 
 
+			<button id="button" type="submit">Enviar Formulário</button>
+			<br>
+			<br>
+			<p><a href="https://ces-jf.webflow.io/" target="blank">Centro de Ensino Superior de Juiz de Fora</a></p>
+		</form>
 
 </body>
+
 </html>

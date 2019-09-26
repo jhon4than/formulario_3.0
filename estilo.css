@@ -1,6 +1,143 @@
-body{background-color: grey}
+@charset "utf-8";
+/* CSS Document */
 
-#formulario{
-	text-align: center;
-	border-width: 1px;
+body{background-color: gray}
+
+
+#area
+{
+  position:relative	;
+  left: 300px;
+  top:29%;
+  width:500px;
+  height:270px;
 }
+
+#area #formulario
+{
+  position:absolute;
+  display:block;   
+}
+fieldset
+{
+  width:700px;
+  background-color: gray;
+}
+
+legend
+{
+  font-style:bold;
+  font-family: "Times New Roman";
+}
+#formulario label
+{
+  position:absolute;
+  margin-top: -20px;
+  left:195px;
+  margin-right:5px;
+}
+ 
+#formulario2 label
+{
+  position:absolute;
+  left:195px;
+  margin-right:5px;
+}
+ 
+#formulario input.campo_nome
+{
+  position:absolute;
+  left:330px;
+  top:98px;
+  width:225px;
+}
+
+#formulario input.campo_sobrenome
+{
+  position:absolute;
+  left:330px;
+  top:132px;
+  width:225px;
+}
+
+#formulario input.campo_email
+{
+  position:absolute;
+  left:330px;
+  top:167px;
+  width:225px;
+}
+
+#formulario input.campo_telefone
+{
+  position:absolute;
+  left:330px;
+  top:201px;
+  width:225px;
+}
+
+#formulario input.campo_logradouro
+{
+  position:absolute;
+  left:330px;
+  top:98px;
+  width:225px;
+}
+
+#formulario input.campo_numero
+{
+  position:absolute;
+  left:330px;
+  top:132px;
+  width:225px;
+}
+
+#formulario input.campo_bairro
+{
+  position:absolute;
+  left:330px;
+  top:167px;
+  width:225px;
+}
+
+#formulario input.campo_estado
+{
+  position:absolute;
+  left:330px;
+  top:201px;
+  width:225px;
+}
+
+#formulario input.campo_cidade
+{
+  position:absolute;
+  left:330px;
+  top:235px;
+  width:225px;
+}
+
+#formulario input.campo_cep
+{
+  position:absolute;
+  left:330px;
+  top:269px;
+  width:225px;
+}
+#button {
+	position: relative;
+	margin-left: 20%;
+	margin-top: -5%;
+	left:300px;
+     width: 200px;
+     height: 50px;
+     font-size: 20px;
+     background-color: white;
+}
+
+fieldset, button {
+	margin-top: 20px;
+}
+
+P { text-align: center }
+
+
